@@ -281,15 +281,11 @@ public class CharController : MonoBehaviour {
 
 	public void displayCorrect(string tech, float buttonTime) {
 		if (tech.Equals ("roll")) {
-			if (buttonTime < 0.55) {
-				excellentCount++;
-				ui.displayExcellent ();
-				ui.updateExcellentCount (excellentCount);
-			} else if (buttonTime < 0.65) {
+			if (buttonTime < (double)26/40) {
 				greatCount++;
 				ui.displayGreat ();
 				ui.updateGreatCount (greatCount);
-			} else if (buttonTime < 0.8) {
+			} else if (buttonTime < (double)29/40) {
 				goodCount++;
 				ui.displayGood ();
 				ui.updateGoodCount (goodCount);
@@ -299,15 +295,11 @@ public class CharController : MonoBehaviour {
 				ui.updateOkCount (okCount);
 			}
 		} else {
-			if (buttonTime < 0.65) {
-				excellentCount++;
-				ui.displayExcellent ();
-				ui.updateExcellentCount (excellentCount);
-			} else if (buttonTime < 0.70) {
+			if (buttonTime < (double)20/26) {
 				greatCount++;
 				ui.displayGreat ();
 				ui.updateGreatCount (greatCount);
-			} else if (buttonTime < 0.8) {
+			} else if (buttonTime < (double)23/26) {
 				goodCount++;
 				ui.displayGood ();
 				ui.updateGoodCount (goodCount);
