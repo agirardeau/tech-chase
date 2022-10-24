@@ -141,13 +141,13 @@ public class UIManagerScript : MonoBehaviour {
 		if (Input.GetKeyDown(KeyCode.Escape)) { 
 			backPressed ();
 		}
-		if (Input.GetKeyDown(KeyCode.LeftArrow)) { 
+		if (Input.GetKeyDown(KeyCode.S)) { 
 			LeftPressed ();
 		}
-		if (Input.GetKeyDown(KeyCode.RightArrow)) { 
+		if (Input.GetKeyDown(KeyCode.F)) { 
 			RightPressed ();
 		}
-		if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.UpArrow) ) { 
+		if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.L) ) { 
 			InPlacePressed ();
 		}
 		if (Input.GetKeyDown(KeyCode.Space)) { 
